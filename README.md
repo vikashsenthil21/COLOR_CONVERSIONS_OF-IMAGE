@@ -265,6 +265,9 @@ img = cv2.imread("wallpaper.jpg")
 img = cv2.resize(img,(300,300))
 cv2.imwrite('sipder_man.jpg',img)
 ```
+### Output
+![image](https://github.com/user-attachments/assets/c6d3d7e9-5b66-48de-94d8-f517ab6ff2e3)
+
 ## Result:
 Thus the images are read, displayed, and written ,and color conversion was performed  successfully using the python program.
 
