@@ -26,18 +26,25 @@ Anaconda - Python 3.7
 1.Load an image from your local directory and display it.
 ### Step2:
 1.Draw a line from the top-left to the bottom-right of the image.
+
 2.Draw a circle at the center of the image.
+
 3.Draw a rectangle around a specific region of interest in the image.
+
 4.Add the text "OpenCV Drawing" at the top-left corner of the image.
 
 ### Step3:
 1.Convert the image from RGB to HSV and display it.
+
 2.Convert the image from RGB to GRAY and display it.
+
 3.Convert the image from RGB to YCrCb and display it.
+
 4.Convert the HSV image back to RGB and display it.
 
 ### Step4:
 1.Access and print the value of the pixel at coordinates (100, 100).
+
 2.Modify the color of the pixel at (200, 200) to white.
 
 ### Step5:
@@ -46,6 +53,7 @@ Anaconda - Python 3.7
 1.Crop a region of interest (ROI) from the image (e.g., a 100x100 pixel area starting at (50, 50)) and display it.
 ### Step7:
 1.Flip the original image horizontally and display it.
+
 2.Flip the original image vertically and display it.
 
 ### Step8:
