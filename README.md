@@ -61,63 +61,67 @@ Anaconda - Python 3.7
 
 
 ## Program:
-### Developed By: Pradeepraj P
-### Register Number: 212222240073 
+### Developed By: VIKASH S
+### Register Number: 212222240115
 
 ### i)Read and Display an Image
 ```
 import cv2
-image=cv2.imread('wallpaper.jpg',1)
-image = cv2.resize(image,(500,500))
-cv2.imshow('Image Window', image)
+img=cv2.imread('ajith.jpg',1)
+img = cv2.resize(img,(400,400))
+cv2.imshow('Image Window', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
 ```
 ### Output
-![image](https://github.com/user-attachments/assets/1de23169-5bc3-46c7-b738-5a7ceba368f6)
+![image](https://github.com/user-attachments/assets/4e109f67-82de-4b2e-80ed-acc3b050b67f)
+
 
 ### ii)Draw Shapes and Add Text
 1) Draw a line from the top-left to the bottom-right of the image.
 ```
-img = cv2.imread("wallpaper.jpg")
-img = cv2.resize(img,(500,500))
+img = cv2.imread("ajith.jpg")
+img = cv2.resize(img,(400,400))
 res = cv2.line(img, (0, 0), (img.shape[1], img.shape[0]), (200, 100, 205), 10)
 cv2.imshow('Image Window', res)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### Output
-![image](https://github.com/user-attachments/assets/90164df7-4dd4-45dd-a87f-b0093bb5ab65)
+![image](https://github.com/user-attachments/assets/4085112e-0807-4ca9-abd6-a45443f7154c)
+
 
 (2) Draw a circle at the center of the image.
 ```
-img = cv2.imread("wallpaper.jpg")
-img = cv2.resize(img,(500,500))
-height, width, _ = img.shape
-center_coordinates = (width // 2, height // 2)
-res = cv2.circle(img, center_coordinates, 150, (255, 0, 0), 10)
-cv2.imshow('Image Window', res)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+import matplotlib.pyplot as plt
+img = cv2.imread("ajith.jpg")
+img.shape
+img_resiz= cv2.resize(img,(400,400))
+resimg=cv2.circle(img_resiz,(200,200),100,(255,0,0),10)
+resimg_rgb =cv2.cvtColor(resimg, cv2.COLOR_BGR2RGB)
+plt.imshow(resimg_rgb)
+plt.show()
 ```
 ### Output
-![image](https://github.com/user-attachments/assets/754618e9-0ed8-44b6-bb90-b570e0fb5a45)
+![image](https://github.com/user-attachments/assets/3d91c05a-12e6-43c4-af5c-6ef7c2ce566b)
+
 
 (3) Draw a rectangle around a specific region of interest in the image.
 ```
-img = cv2.imread("wallpaper.jpg")
-img = cv2.resize(img,(500,500))
-start = (500-10,500-10)  # top-left corner of the rectangle
-stop = (0+10,0+10)   # bottom-right corner of the rectangle
-color = (100, 255, 100)  # Green rectangle
-thickness = 10           # Thickness of the rectangle
-res_img = cv2.rectangle(img, start, stop, color, thickness)
-cv2.imshow('Image Window', res_img)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+import matplotlib.pyplot as plt
+img = cv2.imread("ajith.jpg")
+img.shape
+img_resiz= cv2.resize(img,(400,400))
+resimg=cv2.circle(img_resiz,(200,200),100,(255,0,0),10)
+resimg_rgb =cv2.cvtColor(resimg, cv2.COLOR_BGR2RGB)
+plt.imshow(resimg_rgb)
+plt.show()
 ```
 ### Output
-![image](https://github.com/user-attachments/assets/befcdf64-d023-45b2-9fbd-94739761c519)
+![image](https://github.com/user-attachments/assets/3274c0a4-10e9-4224-b7bd-971e406175f6)
+
+
 
 (4) Add the text "OpenCV Drawing" at the top-left corner of the image.
 ```
@@ -140,33 +144,43 @@ cv2.destroyAllWindows()
 ### iii)Image Color Conversion
 1) Convert the image from RGB to HSV and display it
 ```
-img = cv2.imread('wallpaper.jpg',1)
-img = cv2.resize(img,(500,500))
-cv2.imshow('Original Image',img)
-hsv2 = cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
-cv2.imshow('RGB2HSV',hsv2)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+import matplotlib.pyplot as plt
+import cv2
+img = cv2.imread("ajith.jpg")
+img.shape
+img= cv2.resize(img,(400,400))
+# Convert to grayscale
+img1 = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+# Display the grayscale image
+cv2.imshow('Image Window', img)
+plt.imshow(img1)
+plt.show()
 ```
 ### Output
-![image](https://github.com/user-attachments/assets/95970a36-8668-486f-aa5e-7368c22a10bb)
+![image](https://github.com/user-attachments/assets/f926731c-cdb7-4b58-b4f1-89bec0f14c10)
+
 
 (2) Convert the image from RGB to GRAY and display it.
 ```
-img = cv2.imread('wallpaper.jpg',1)
-img = cv2.resize(img,(400,400))
-cv2.imshow('Original Image',img)
-gray2 = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
-cv2.imshow('RGB2GRAY',gray2)
+img = cv2.imread("ajith.jpg", 0)
+img= cv2.resize(img,(400,400))
+cv2.imshow('Image Window', img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+# Display the grayscale image
+cv2.imshow('Image Window', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### Output
-![image](https://github.com/user-attachments/assets/e450b0fa-f4c5-4078-a4a8-80617918ab35)
+![image](https://github.com/user-attachments/assets/945249ca-4f00-4097-a665-fd4122c27ec0)
+
 
 3) Convert the image from RGB to YCrCb and display it.
 ```
-img = cv2.imread('wallpaper.jpg',1)
+img = cv2.imread('ajith.jpg',1)
 img = cv2.resize(img,(400,400))
 cv2.imshow('Original Image',img)
 YCrCb1 = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb)
@@ -175,11 +189,12 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### Output
-![image](https://github.com/user-attachments/assets/6ffaece3-e442-40ad-9da5-bb438642bf7b)
+![image](https://github.com/user-attachments/assets/6246174a-d20a-4a5c-9257-4434e9ac0076)
+
 
 (4) Convert the HSV image back to RGB and display it.
 ```
-img = cv2.imread('wallpaper.jpg',1)
+img = cv2.imread('ajith.jpg',1)
 img = cv2.resize(img,(400,400))
 cv2.imshow('Original Image',img)
 BGR = cv2.cvtColor(img,cv2.COLOR_HSV2BGR)
@@ -187,8 +202,8 @@ cv2.imshow('HSV2RGB',BGR)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-### Output
-![image](https://github.com/user-attachments/assets/ddc827eb-c6ca-4203-9855-f3cd365576da)
+![image](https://github.com/user-attachments/assets/b5cd4927-9a72-4c08-8be5-79b8e29b4849)
+
 
 ### iv)Access and Manipulate Image Pixels
 ```
