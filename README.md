@@ -74,7 +74,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ### Output
-![image](https://github.com/user-attachments/assets/f5fb1179-b198-4fcb-9719-8d814edfc9f1)
+![image](https://github.com/user-attachments/assets/69215035-2899-4bfe-a80a-b6729bccb333)
+
 
 
 
@@ -237,7 +238,7 @@ plt.show()
 ```
 ### Output
 ![image](https://github.com/user-attachments/assets/e2b708f5-afef-4dd9-9c82-11b4bfcc3699)
-5)
+
 
 
 ### vi)Image Cropping
