@@ -163,17 +163,15 @@ plt.show()
 
 (2) Convert the image from RGB to GRAY and display it.
 ```
-import cv2
-import cv2
-import matplotlib.pyplot as plt
-image = cv2.imread("ajith.jpg")
-gray2 = cv2.cvtColor(image,cv2.COLOR_RGB2GRAY)
-plt.imshow(gray2)
-plt.axis('off')
-plt.show()
+mg = cv2.imread('ajith.jpg',1)
+gray2 = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
+cv2.imshow('RGB2GRAY',gray2)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 ```
 ### Output
-![image](https://github.com/user-attachments/assets/264f087a-2fdc-425a-a3fc-a25747159170)
+
+![Screenshot 2024-09-30 090117](https://github.com/user-attachments/assets/3360ef28-db96-4687-a8e9-6cedd609d058)
 
 
 
